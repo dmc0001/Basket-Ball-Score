@@ -1,10 +1,8 @@
 package lolodmc67.com;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
-
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -59,21 +57,21 @@ public class MainActivity extends AppCompatActivity {
     private void displayA(int num, int num2) {
         TextView questionTextView = findViewById(R.id.score_teamA);
         questionTextView.setText("" + num);
-        Toast.makeText(this,"Team A scores a "+num2+" point",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Team A scores a "+num2+" point",Toast.LENGTH_SHORT).show();
     }
 
     private void displayA() { TextView questionTextView = findViewById(R.id.score_teamA);
         questionTextView.setText("" + 0);
-        Toast.makeText(this,"Rest",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Rest",Toast.LENGTH_SHORT).show();
     }
     private void displayB() { TextView questionTextView = findViewById(R.id.score_teamB);
         questionTextView.setText("" + 0);
-        Toast.makeText(this,"Rest",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Rest",Toast.LENGTH_SHORT).show();
     }
 
     private void displayB(int num,int num2) {
         TextView questionTextView = findViewById(R.id.score_teamB);
         questionTextView.setText("" + num);
-        Toast.makeText(this,"Team B scores a "+num2+" point",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Team B scores a "+num2+" point",Toast.LENGTH_SHORT).show();
     }
 }
