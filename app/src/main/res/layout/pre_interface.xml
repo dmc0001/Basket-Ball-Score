@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:fontFamily="@font/poppins_medium"
+        android:fontFamily="@font/poppins_bold"
         android:gravity="center_horizontal"
         android:text="Court Counter"
         android:layout_marginTop="180dp"
@@ -21,9 +21,9 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_marginTop="35dp"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/basketball" />
+        app:srcCompat="@mipmap/picone" />
 
 </LinearLayout>
