@@ -27,6 +27,6 @@ android:layout_centerVertical="true"
     android:layout_width="150dp"
     android:layout_height="150dp"
     android:layout_gravity="center"
-    app:srcCompat="@mipmap/picone" />
+    app:srcCompat="@mipmap/ic_launcher" />
 
 </LinearLayout>
