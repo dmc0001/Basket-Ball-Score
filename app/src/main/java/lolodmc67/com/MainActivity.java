@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     private void displayA(int num, int num2) {
         TextView questionTextView = findViewById(R.id.score_teamA);
         questionTextView.setText("" + num);
-        Toast.makeText(this,"Team A scores a "+num2+" point",Toast.LENGTH_SHORT).show();
+
     }
 
     private void displayA() { TextView questionTextView = findViewById(R.id.score_teamA);
@@ -72,6 +72,6 @@ public class MainActivity extends AppCompatActivity {
     private void displayB(int num,int num2) {
         TextView questionTextView = findViewById(R.id.score_teamB);
         questionTextView.setText("" + num);
-        Toast.makeText(this,"Team B scores a "+num2+" point",Toast.LENGTH_SHORT).show();
+
     }
 }
