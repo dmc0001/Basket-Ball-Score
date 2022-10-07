@@ -12,6 +12,9 @@
         <item name="android:fontFamily">@font/poppins_bold</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- navigation bar color. -->
+        <item name="android:navigationBarColor">#ED751C</item>
+
         <!-- Customize your theme here. -->
     </style>
 </resources>
