@@ -32,8 +32,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="700"
                 android:gravity="center_horizontal"
-                android:text="Team A"
+                android:text="@string/team_a"
                 android:textColor="#000000"
                 android:textSize="25sp" />
 
@@ -56,7 +57,7 @@
                 android:background="@drawable/custom_buttom"
                 android:fontFamily="@font/poppins_medium"
                 android:onClick="plus3_Points_A"
-                android:text="+3 Points"
+                android:text="@string/three_points"
                 android:textAllCaps="false"
                 android:textSize="17sp" />
 
@@ -68,7 +69,7 @@
                 android:background="@drawable/custom_buttom"
                 android:fontFamily="@font/poppins_medium"
                 android:onClick="plus2_Points_A"
-                android:text="+2 Points"
+                android:text="@string/two_points"
                 android:textAllCaps="false"
                 android:textSize="17sp" />
 
@@ -81,7 +82,7 @@
                 android:background="@drawable/custom_buttom"
                 android:fontFamily="@font/poppins_medium"
                 android:onClick="freethrow_Points_A"
-                android:text="Free throw"
+                android:text="@string/free_throw"
                 android:textAllCaps="false"
                 android:textSize="17sp" />
 
@@ -107,8 +108,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="16dp"
                 android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="700"
                 android:gravity="center_horizontal"
-                android:text="Team B"
+                android:text="@string/team_b"
                 android:textColor="#000000"
                 android:textSize="25sp" />
 
@@ -131,7 +133,7 @@
                 android:background="@drawable/custom_buttom"
                 android:fontFamily="@font/poppins_medium"
                 android:onClick="plus3_Points_B"
-                android:text="+3 Points"
+                android:text="@string/three_points"
                 android:textAllCaps="false"
                 android:textSize="17sp" />
 
@@ -144,7 +146,7 @@
                 android:background="@drawable/custom_buttom"
                 android:fontFamily="@font/poppins_medium"
                 android:onClick="plus2_Points_B"
-                android:text="+2 Points"
+                android:text="@string/two_points"
                 android:textAllCaps="false"
                 android:textSize="17sp" />
 
@@ -157,7 +159,7 @@
                 android:background="@drawable/custom_buttom"
                 android:fontFamily="@font/poppins_medium"
                 android:onClick="freethrow_Points_B"
-                android:text="Free throw"
+                android:text="@string/free_throw"
                 android:textAllCaps="false"
                 android:textSize="17sp" />
 
@@ -178,7 +180,7 @@
         android:background="@drawable/custom_buttom"
         android:fontFamily="@font/poppins_medium"
         android:onClick="rest"
-        android:text="Rest"
+        android:text="@string/rest"
         android:textAllCaps="false"
         android:textSize="17sp" />
 
