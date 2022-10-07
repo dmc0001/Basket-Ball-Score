@@ -1,4 +1,4 @@
-# Basket-Ball-Score
+# Court-Counter
 
 android app to manage Basket-Ball game
 
