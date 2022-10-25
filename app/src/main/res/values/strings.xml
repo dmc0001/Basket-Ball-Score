@@ -1,11 +1,9 @@
 <resources>
-    <string name="app_name">Court Counter</string>
-    <string name="team_b">Team B</string>
-    <string name="team_a">Team A</string>
-    <string name="three_points">+ 3 points</string>
-    <string name="two_points">+ 2 points</string>
-    <string name="rest">Rest</string>
-    <string name="free_throw">Free Throw</string>
-    <string name="team_a">Team A</string>
-    <string name="team_b">Team B</string>
+    <string name="app_name" translatable="false">Court Counter</string>
+    <string name="team_b" translatable="false">Team B</string>
+    <string name="team_a" translatable="false">Team A</string>
+    <string name="three_points" translatable="false">+ 3 points</string>
+    <string name="two_points" translatable="false">+ 2 points</string>
+    <string name="rest" translatable="false">Rest</string>
+    <string name="free_throw" translatable="false">Free Throw</string>
 </resources>

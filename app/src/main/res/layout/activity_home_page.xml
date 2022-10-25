@@ -5,95 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePage">
-    <androidx.cardview.widget.CardView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler_view"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="15dp"
-        android:layout_margin="16dp"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-32dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
         >
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="16dp"
-            >
 
-            <ImageView
-                android:id="@+id/team_a_img"
-                android:layout_width="100dp"
-                android:layout_height="170dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"
-                app:srcCompat="@mipmap/team_b" />
-
-            <ImageView
-                android:id="@+id/team_b_img"
-                android:layout_width="100dp"
-                android:layout_height="110dp"
-                android:layout_marginTop="10dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true"
-                app:srcCompat="@mipmap/team_a" />
-            <ImageView
-                android:id="@+id/vs_img"
-                android:layout_width="70dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="10dp"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                app:srcCompat="@mipmap/vs" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:textColor="#000000"
-                android:layout_marginLeft="22dp"
-                android:layout_alignParentStart="true"
-                android:text="@string/team_a"
-           />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:textColor="#000000"
-                android:layout_marginRight="22dp"
-                android:layout_alignParentEnd="true"
-                android:text="@string/team_b"
-                />
-            <TextView
-                android:id="@+id/point_team_a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="#000000"
-                android:layout_toRightOf="@id/team_a_img"
-                android:textSize="40sp"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:text="0"
-                />
-            <TextView
-                android:id="@+id/point_team_b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="#000000"
-                android:layout_toLeftOf="@id/team_b_img"
-                android:textSize="40sp"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:text="0"
-                />
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-   <androidx.recyclerview.widget.RecyclerView
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:id="@+id/recyler_view">
-
-   </androidx.recyclerview.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

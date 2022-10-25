@@ -22,7 +22,7 @@ public class PreInterface extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(PreInterface.this, MainActivity.class);
+                Intent intent = new Intent(PreInterface.this, HomePage.class);
                 startActivity(intent);
                 finish();
             }
