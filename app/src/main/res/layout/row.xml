@@ -2,9 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".HomePage"
+    android:paddingLeft="8dp"
+android:paddingRight="8dp"
     android:orientation="vertical"
     >
     <androidx.cardview.widget.CardView
@@ -12,8 +15,10 @@
         android:id="@+id/card"
         android:layout_height="160dp"
         app:cardCornerRadius="15dp"
-        app:cardElevation="15dp"
-        android:layout_margin="16dp"
+        app:cardElevation="7dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="28dp"
+
         >
         <RelativeLayout
             android:layout_width="match_parent"
