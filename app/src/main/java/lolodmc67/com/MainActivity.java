@@ -61,10 +61,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void displayA() { TextView questionTextView = findViewById(R.id.score_teamA);
+        score_A=0;
         questionTextView.setText("" + 0);
         Toast.makeText(this,"Rest",Toast.LENGTH_SHORT).show();
     }
     private void displayB() { TextView questionTextView = findViewById(R.id.score_teamB);
+
+        score_B=0;
         questionTextView.setText("" + 0);
         Toast.makeText(this,"Rest",Toast.LENGTH_SHORT).show();
     }
