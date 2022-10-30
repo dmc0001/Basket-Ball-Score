@@ -182,7 +182,7 @@
             >
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_save"
+                android:id="@+id/button_reset"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="40dp"
@@ -190,13 +190,14 @@
                 android:layout_marginRight="5dp"
                 android:background="@drawable/custom_buttom"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Save"
+                android:onClick="rest"
+                android:text="save"
                 android:textAllCaps="false"
                 android:textSize="17sp" />
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_reset"
+                android:id="@+id/button_save"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="40dp"
