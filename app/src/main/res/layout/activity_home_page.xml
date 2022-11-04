@@ -1,36 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HomePage">
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyler_view"
-
-        android:clipToPadding="false"
-        android:paddingTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@android:color/transparent"
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent"
+    >
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/home_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:layout_gravity="center_horizontal">
+        android:background="@drawable/custom_buttom"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:text="Home" />
 
-    </androidx.recyclerview.widget.RecyclerView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/matches_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_buttom"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:text="Matches" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floating_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="36dp"
-        android:contentDescription="Adding new game"
-        android:src="@drawable/add" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sessons_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_buttom"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:text="Sessons" />
+</LinearLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="lolodmc67.com.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 
-</RelativeLayout>
+</LinearLayout>

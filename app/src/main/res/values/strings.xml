@@ -6,4 +6,6 @@
     <string name="two_points" translatable="false">+ 2 points</string>
     <string name="rest" translatable="false">Rest</string>
     <string name="free_throw" translatable="false">Free Throw</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -29,6 +30,10 @@ import java.util.ArrayList;
 
 public class HomePage extends AppCompatActivity {
 FloatingActionButton floatingButton;
+Button HomeBtn;
+Button MatchesBtn;
+Button SessionsBtn;
+
 
 String nameTeamA , nameTeamB , Team_A = " Team A" , Team_B = "Team B";
     ArrayList<Game> data = new ArrayList<Game>();
@@ -36,6 +41,50 @@ String nameTeamA , nameTeamB , Team_A = " Team A" , Team_B = "Team B";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+        HomeBtn = findViewById(R.id.home_btn);
+        MatchesBtn = findViewById(R.id.matches_btn);
+        SessionsBtn = findViewById(R.id.sessons_btn);
+
+        HomeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainerView, HomeFragment.class, null)
+                        .setReorderingAllowed(true)
+                        .addToBackStack("name") // name can be null
+                        .commit();
+
+            }
+        });
+
+        MatchesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainerView, MatchesFragment.class, null)
+                        .setReorderingAllowed(true)
+                        .addToBackStack("name") // name can be null
+                        .commit();
+
+            }
+        });
+        SessionsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainerView, SessonsFragment.class, null)
+                        .setReorderingAllowed(true)
+                        .addToBackStack("name") // name can be null
+                        .commit();
+
+            }
+        });
+
+
 
 
      /*Intent i2 = getIntent();
@@ -59,7 +108,7 @@ String nameTeamA , nameTeamB , Team_A = " Team A" , Team_B = "Team B";
         myrecycler.setLayoutManager(new LinearLayoutManager(this));
         myrecycler.setAdapter(adapter);*/
 
-        RecyclerView myrecycler = (RecyclerView) findViewById(R.id.recyler_view);
+       /* RecyclerView myrecycler = (RecyclerView) findViewById(R.id.recyler_view);
 
         floatingButton= findViewById(R.id.floating_button);
         floatingButton.setOnClickListener(view -> {
@@ -111,7 +160,7 @@ String nameTeamA , nameTeamB , Team_A = " Team A" , Team_B = "Team B";
             });
 
             dialog.show();
-        });
+        });*/
 
     }
 
