@@ -30,8 +30,7 @@ public class MatchesFragment extends Fragment {
     ArrayList<Game> data = new ArrayList<Game>();
     RecyclerView myrecycler;
     View view;
-    Dialog dialog;
-    Button Save;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,7 +45,7 @@ public class MatchesFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_matches, container, false);
         myrecycler = (RecyclerView) view.findViewById(R.id.recyler_view);
         floatingButton= view.findViewById(R.id.floating_button);
-ViewGroup viewGroup = view.findViewById(androidx.appcompat.R.id.content);
+//ViewGroup viewGroup = view.findViewById(androidx.appcompat.R.id.content);
 
 
         RecyclerView myrecycler = view.findViewById(R.id.recyler_view);
